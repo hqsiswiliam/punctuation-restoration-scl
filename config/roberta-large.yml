@@ -1,0 +1,30 @@
+experiment:
+  name: roberta-large
+
+train:
+  batch_size: 2
+  epoch: 20
+  lr: 0.00001 #1e-5
+  scl:
+    lambda_value: 0.1
+    temperature: 0.3
+  accumulation_steps: 1
+  seq_shift: 32
+  loss: ce
+  warmup_steps: 1
+  maskout_subword: true
+  grad_clip: 100
+
+model:
+  name: roberta-large
+  freeze_base: false
+  num_class: 4
+  max_len: 256
+  tail:
+    linear: false
+    linear_dim: 2048
+  device: 'cuda'
+  dropout: 0.1
+
+dataset:
+  path: 'dataset/roberta-large/'

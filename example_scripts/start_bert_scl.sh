@@ -1,0 +1,1 @@
+python train.py --config=config/bert-scl.yml -l 0.2 -t 0.9

@@ -1,0 +1,27 @@
+train:
+  batch_size: 16
+  epoch: 20
+  optimizer: adamw
+  lr: 0.00001 #1e-5
+  scl:
+    lambda_value: 0.1
+    temperature: 0.3
+    pooling: false
+    weight: false
+  accumulation_steps: 1
+  seq_shift: 32
+  warmup_steps: 1
+  maskout_subword: true
+  grad_clip: 100
+  freeze_base_until: 0
+model:
+  freeze_base: false
+  num_class: 4
+  max_len: 256
+  tail:
+    linear: false
+    linear_dim: 2048
+    as_scl: false
+  device: 'cuda'
+  dropout: 0.1
+

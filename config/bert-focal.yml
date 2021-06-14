@@ -1,0 +1,27 @@
+experiment:
+  name: bert-base-uncased-focal
+
+train:
+  batch_size: 16
+  epoch: 20
+  lr: 0.00005 #5e-5
+  accumulation_steps: 1
+  seq_shift: 32
+  loss: focal
+  warmup_steps: 1
+  maskout_subword: true
+  grad_clip: 100
+
+model:
+  name: bert-base-uncased
+  freeze_base: false
+  num_class: 4
+  max_len: 256
+  tail:
+    linear: false
+    linear_dim: 2048
+  device: 'cuda'
+  dropout: 0.1
+
+dataset:
+  path: 'dataset/bert-base-uncased/'
