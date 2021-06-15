@@ -1,14 +1,14 @@
 # Token-Level Supervised Contrastive Learning for Punctuation Restoration
 ## Overview
-This project adapts **Supervised Contrastive Learning** to the punctuation restoration task. This is the implementation of the paper **Token-Level Supervised Contrastive Learning for Punctuation Restoration** accepted by [InterSpeech 2021](https://www.interspeech2021.org/)
+This project adapts Supervised Contrastive Learning to the punctuation restoration task. This is the implementation of the paper **Token-Level Supervised Contrastive Learning for Punctuation Restoration** accepted by [InterSpeech 2021](https://www.interspeech2021.org/)
 
 ## Data
-The data has been converted by corresponding BERT tokenizer with labels, and save into the pickle files under the `dataset/` directory.
+The data has been converted by corresponding BERT tokenizer with labels, and saved into the pickle files under the `dataset/` directory.
 
 The original text files are from [**International Workshop on Spoken Language Translation, 2012**](http://hltc.cs.ust.hk/iwslt/index.php/evaluation-campaign/ted-task.html)
 
 ## Model Architecture
-We fine-tune a Transformer-based language model with supervised contrastive learning for the punctuation restoration task.
+We fine-tuned a Transformer-based language model with supervised contrastive learning for the punctuation restoration task.
 ![model image](images/model.png)
 
 ## Environment Installation
