@@ -47,5 +47,10 @@ python evaluate.py --config=[config path] --checkpoint=[saved model file path]
 
 ## Cite this work
 ```
-
+@article{huang2021tokenlevel,
+      title={Token-Level Supervised Contrastive Learning for Punctuation Restoration}, 
+      author={Qiushi Huang and Tom Ko and H Lilian Tang and Xubo Liu and Bo Wu},
+      journal={arXiv preprint arXiv:2107.09099},
+      year={2021},
+}
 ```
